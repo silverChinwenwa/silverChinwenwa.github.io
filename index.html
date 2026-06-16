@@ -4,142 +4,207 @@
   <meta charset="UTF-8">
   <title>Silver Nwogu |  Health Data Analyst</title>
 
-  <style>
-    body { 
+ <style>
+  body { 
     margin: 0;
-     font-family: Arial, sans-serif;
-     background: #eff8ff;
-     color: #523a21;
-   }
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+  }
 
-   /* HEADER */
-   .header {
-     background: #eff8ff;
-     color: white;
-     padding: 60px 20px;
-     text-align: center;
-   }
+  /* SECTIONS */
+  .section {
+    padding: 70px 20px;
+  }
 
-   .header h1 {
-     margin: 0;
-     font-size: 40px;
-   }
+  /* HEADER */
+  .header {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+  }
 
-   .header p {
-     margin-top: 10px;
-     color: #cbd5e1;
-   }
+  .header h1 {
+    margin: 0;
+    font-size: 42px;
+    font-weight: 700;
+  }
 
-   /* MAIN CONTAINER */
-   .container {
-     max-width: 900px;
-     margin: auto;
-     padding: 40px 20px;
-   }
+  .header p {
+    margin-top: 12px;
+    color: #94a3b8;
+    font-size: 16px;
+  }
 
-   h2 {
-     border-left: 4px solid #2563eb;
-     padding-left: 10px;
-     margin-top: 40px;
-   }
+  /* MAIN CONTAINER */
+  .container {
+    max-width: 900px;
+    margin: auto;
+  }
 
-   /* PROJECT CARDS */
-   .project {
-     background: white;
-     padding: 20px;
-     margin: 20px 0;
-     border-radius: 10px;
-     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-   }
+  /* SECTION TITLES */
+  h2 {
+    border-left: 5px solid #2563eb;
+    padding-left: 12px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
 
-   .project h3 {
-     margin-top: 0;
-   }
+  /* PROJECT CARDS */
+  .project {
+    background: white;
+    padding: 24px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
 
-   /* BUTTON */
-   .btn {
-     display: inline-block;
-     margin-top: 10px;
-     padding: 10px 15px;
-     background: #2563eb;
-     color: white;
-     border-radius: 6px;
-     text-decoration: none;
-     font-size: 14px;
-   }
+  .project:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  }
 
-   .btn:hover {
-     background: #1d4ed8;
-   }
+  .project h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
 
-   /* CONTACT BOX */
-   .contact {
-     background: #111827;
-     color: white;
-     padding: 30px;
-     border-radius: 10px;
-     margin-top: 40px;
-   }
+  .project p {
+    color: #475569;
+    font-size: 14px;
+  }
 
-   .contact a {
-     color: #60a5fa;
-     text-decoration: none;
-   }
+  /* BUTTON */
+  .btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 16px;
+    background: #2563eb;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+  }
 
-  </style>
+  .btn:hover {
+    background: #1d4ed8;
+  }
+
+  /* CONTACT BOX */
+  .contact {
+    background: #0f172a;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+
+  .contact a {
+    color: #60a5fa;
+    text-decoration: none;
+  }
+
+  .contact a:hover {
+    text-decoration: underline;
+  }
+
+</style>
 </head>
 
 <body>
 
-<h1>Silver Nwogu</h1>
-<p>Healthcare Data Analyst</p>
-
-<hr>
-
-<h2>About</h2>
-<p>
-I analyze biological and healthcare data to uncover insights into disease mechanisms.
-My work focuses on RNA-seq analysis, protein structure visualization, and healthcare analytics.
-</p>
-
-<hr>
-
-<h2>Projects</h2>
-
-<div class="project">
-  <h3>RNA-seq Analysis (Lung Tissue Samples)</h3>
-  <p>
-  Performed RNA-sequencing data from lung tissue samples to detect significnt genes in chp and ipf in comparison to the control
-  </p>
-  <p><b>Tools:</b> Python, RNA-seq workflow, statistical analysis</p>
-  <a href="https://github.com/silverChinwenwa/RNA-Seq-GSE150910-Analysis">View Project</a>
+<!-- HEADER -->
+<div class="section header">
+  <h1>Silver Nwogu</h1>
+  <p>Healthcare Data Analyst</p>
 </div>
 
-<div class="project">
-  <h3>Protein Structure Visualization</h3>
-  <p>
-  Modeled and visualized Insulin protein structures using PyMOL to understand structural implications
+<!-- ABOUT -->
+<div class="section about">
+  <div class="container">
+    <h2>About</h2>
+    <p>
+      I analyze biological and healthcare data to uncover insights into disease mechanisms.
+      My work focuses on RNA-seq analysis, protein structure visualization, and healthcare analytics.
+    </p>
+  </div>
+</div>
+
+<!-- FEATURED -->
+<div class="section featured">
+  <div class="container">
+    <h2>Featured Project</h2>
+    <p><b>RNA-seq Analysis:</b> Investigated gene expression linked to insulin resistance.</p>
+    <a class="btn" href="#">View Full Project</a>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<div class="section projects">
+  <div class="container">
+    <h2>Projects</h2>
+
+    <div class="project-box">
+      <h3>RNA-seq Analysis(Lung Tissue Samples)</h3>
+      <p>Performed RNA-sequencing data from lung tissue samples to detect significant genes in chp and ipf in comparison to the control
+      </p>
+      <p><b>Tools:</b> Python, RNA-seq workflow, statistical analysis</p>
+      <a class="btn" href="https://github.com/silverChinwenwa/RNA-Seq-GSE150910-Analysis">View Project</a>
+    </div>
+
+    <div class="project-box">
+      <h3>Healthcare Data Dashboard</h3>
+      <p>Built interactive dashboards using SQL, Excel, and Power BI to extract insights from healthcare datasets.
+      </p>
+      <p><b>Tools:</b> SQL, Excel, Power BI</p>
+      <a class="btn" href="https://github.com/silverChinwenwa/hospital-data-analysis/tree/main">View Project</a>
+    </div>
+
+    <div class="project-box">
+      <h3>Protein Structure Visualization</h3>
+      <p> Modeled and visualized Insulin protein structures using PyMOL to understand structural implications
   in biological function.
-  </p>
-  <p><b>Tools:</b> PyMOL, Alphafold DB</p>
-  <a href="https://github.com/silverChinwenwa/Bioinformatics-codealphatasks/tree/main/protein-structure_task3">View Project</a>
+      </p>
+      <p><b>Tools:</b> PyMOL, Alphafold DB</p>
+      <a class="btn" href="https://github.com/silverChinwenwa/Bioinformatics-codealphatasks/tree/main/protein-structure_task3">View Project</a>
+    </div>
+
+  </div>
 </div>
 
-<div class="project">
-  <h3>Healthcare Data Dashboard</h3>
-  <p>
-  Built interactive dashboards using SQL, Excel and Power BI to extract insights from healthcare datasets.
-  </p>
-  <p><b>Tools:</b> SQL, Excel, Power BI</p>
-  <a href="https://github.com/silverChinwenwa/hospital-data-analysis/tree/main">View Project</a>
+<!-- EXPERIENCE -->
+<div class="section experience">
+  <div class="container">
+    <h2>Experience</h2>
+    <p><b>Decode Lab Internship</b><i>(2026)</i><br>Analyzed raw datasets and build responsive dashboards</p>
+     <p><b>CodeAlpha Internship</b><i>(2026)</i><br>Performed BLAST, MSA and RNA-seq analysis</p>
+  </div>
 </div>
 
-<hr>
+<!-- CERTIFICATIONS -->
+<div class="section certifications">
+  <div class="container">
+    <h2>Certifications</h2>
+    <p>CodeAlpha Bionformatics 2026</p>
+  </div>
+</div>
 
-<h2>Contact</h2>
-<p>Email: silvernwogu5@email.com</p>
-<p><a href="https://www.linkedin.com/in/silvernwogu?utm_source=share_via&utm_content=profile&utm_medium=member_android
+<!-- CONTACT -->
+<div class="section contact">
+  <div class="container">
+    <h2>Contact</h2>
+    <p>Email: silvernwogu5@gmail.com</p>
+    <p><a href="https://www.linkedin.com/in/silvernwogu?utm_source=share_via&utm_content=profile&utm_medium=member_android
 ">LinkedIn</a></p>
+
+  </div>
+</div>
 
 </body>
 </html>
