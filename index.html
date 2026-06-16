@@ -15,15 +15,18 @@
 
   /* SECTIONS */
   .section {
-    padding: 70px 20px;
+    padding: 30px 20px;
   }
 
+   .section:nth-child(even) {
+  background: #f1f5f9;
+   }
   /* HEADER */
   .header {
     background: #0f172a;
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 60px 20px;
   }
 
   .header h1 {
@@ -38,6 +41,20 @@
     font-size: 16px;
   }
 
+   .skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  }
+
+.skill {
+  background: #e2e8f0;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  }
+   
   /* MAIN CONTAINER */
   .container {
     max-width: 900px;
@@ -48,8 +65,8 @@
   h2 {
     border-left: 5px solid #2563eb;
     padding-left: 12px;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
     font-size: 24px;
   }
 
@@ -79,6 +96,13 @@
     font-size: 14px;
   }
 
+   .project img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  }
   /* BUTTON */
   .btn {
     display: inline-block;
@@ -121,8 +145,8 @@
 
 <!-- HEADER -->
 <div class="section header">
-  <h1>Silver Nwogu</h1>
-  <p>Healthcare Data Analyst</p>
+  <h1>Silver Nwogu Chinwenwa</h1>
+  <p>Healthcare Data Analyst | Bioinformatics</p>
 </div>
 
 <!-- ABOUT -->
@@ -136,21 +160,32 @@
   </div>
 </div>
 
-<!-- FEATURED -->
-<div class="section featured">
+<div class="section">
   <div class="container">
-    <h2>Featured Project</h2>
-    <p><b>RNA-seq Analysis:</b> Investigated gene expression linked to insulin resistance.</p>
-    <a class="btn" href="#">View Full Project</a>
+    <h2>Tools & Skills</h2>
+
+    <div class="skills">
+      <div class="skill">Python</div>
+      <div class="skill">RNA-seq</div>
+      <div class="skill">SQL</div>
+      <div class="skill">Power BI</div>
+      <div class="skill">Excel</div>
+      <div class="skill">BLAST</div>
+      <div class="skill">Multiple Sequence Alignment</div>
+      <div class="skill">PyMOL</div>
+      <div class="skill">Data Visualization</div>
+    </div>
+
   </div>
 </div>
-
+  
 <!-- PROJECTS -->
 <div class="section projects">
   <div class="container">
     <h2>Projects</h2>
 
-    <div class="project-box">
+    <div class="project">
+      <img src="images/chp s ctrl heatmap.png" alt="Healthcare Data Dashboard">
       <h3>RNA-seq Analysis(Lung Tissue Samples)</h3>
       <p>Performed RNA-sequencing data from lung tissue samples to detect significant genes in chp and ipf in comparison to the control
       </p>
@@ -158,7 +193,8 @@
       <a class="btn" href="https://github.com/silverChinwenwa/RNA-Seq-GSE150910-Analysis">View Project</a>
     </div>
 
-    <div class="project-box">
+    <div class="project">
+      <img src="images/Screenshot 2026-06-02 133843.png" alt="Healthcare Data Dashboard">
       <h3>Healthcare Data Dashboard</h3>
       <p>Built interactive dashboards using SQL, Excel, and Power BI to extract insights from healthcare datasets.
       </p>
@@ -166,7 +202,8 @@
       <a class="btn" href="https://github.com/silverChinwenwa/hospital-data-analysis/tree/main">View Project</a>
     </div>
 
-    <div class="project-box">
+    <div class="project">
+      <img src="images/Screenshot 2026-06-10 053343.png" alt="Protein Structure Visualization">
       <h3>Protein Structure Visualization</h3>
       <p> Modeled and visualized Insulin protein structures using PyMOL to understand structural implications
   in biological function.
